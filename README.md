@@ -4,8 +4,8 @@
 As part of this exercise, I have examined the cars dataset, which has information on about 426K cars. Leveraging this data and by applying various machine learning regression models, I have explored the factors that make a car more or less expenive. I have provided a clear recommendation as to what a consumer value in a used car.
 
 
-- Here is the [Data](https://github.com/csonamohan/sonawork/blob/main/data/coupons.csv)
-- Here is the [Notebook](https://github.com/csonamohan/sonawork/blob/main/prompt.ipynb)
+- Here is the [Data](https://github.com/csonamohan/carprice/blob/main/data/vehicles.csv)
+- Here is the [Notebook](https://github.com/csonamohan/carprice/blob/main/prompt_II.ipynb)
 
 
 ## Exploring the data
@@ -18,8 +18,8 @@ A detailed look at the data some interesting facts -
 * Ford, Cheverlot and Toyota are the most popular manufacturers
 
 ![Alt text](images/6dimage.png)
+![Alt text](images/4Dimage.png)
 
-![Alt text](images/4dimage.png)
 
 ## Cleaning up the Data
 
@@ -45,7 +45,6 @@ From what is seen here, it is clear that -
 * Drive, Type, State, paint, fuel, title, transmission, condition, cylinders - these are the next set of important dimensions
 * California, Arkansas, Colorado, Arizona and Alabama - these states have higher influence on price. Most probably, these states have certain special price rules/taxes.
 
-![Alt text](images/image-2.png)
 
 ## Next steps / Recommendations
 - We need to continue to eliminate dimensions and see further patterns in car price data to know the full influence of various factors.
