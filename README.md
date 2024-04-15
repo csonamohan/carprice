@@ -38,6 +38,10 @@ After making the necessary changes, I split the dataset into test and train sets
 
 ![Alt text](images/eval.png)
 
+1. If we want to prioritize minimizing large errors, we need to look at the model with the least MSE/RMSE. In this case, Ridge and Lasso model both have the least MSE/RMSE.
+2. To determine the model with best overall accuracy, we need to look at the model with the least MAE. Here, Lasso model gives the best MAE.
+3. R-squared metric provides a straightforward indication of how well the model fits the data. Higher the R2, the better fit. Here both Ridge and Lasso models seem to do the best.
+
 ## Findings
 
 From what is seen here, it is clear that - 
@@ -47,5 +51,17 @@ From what is seen here, it is clear that -
 
 
 ## Next steps / Recommendations
-- We need to continue to eliminate dimensions and see further patterns in car price data to know the full influence of various factors.
-- We need to understand tax rules of states to understand why prices are influenced by states these cars are sold
+
+We would continue with fine tuning the study because both Lasso and Ridge models have similar metrics - 
+    
+1. Assess Additional Metrics: Check if there are any other evaluation metrics available or domain-specific metrics that could provide additional insights into model performance. 
+
+2. Conduct Sensitivity Analysis: Perform sensitivity analysis by varying the input parameters or assumptions used in the models. This can help assess the robustness of the models and identify scenarios where one model may outperform the others.
+
+3. Explore Ensemble Methods: Consider combining the models using ensemble methods such as averaging, stacking, or boosting. Ensemble methods can often improve predictive performance by leveraging the strengths of individual models.
+
+4. Review Data Quality: Verify the quality of the data used for model training and evaluation. Inconsistent or noisy data may lead to similar performance across multiple models. 
+ 
+5. Consult Domain Experts: Seek input from domain experts or stakeholders to understand the specific requirements and priorities of the problem. Their insights can help guide the decision-making process and identify relevant factors that may influence model selection.
+
+6. Perform Cross-Validation: Use cross-validation techniques to validate model performance on multiple subsets of the data. This can help detect any variability in performance and provide more robust estimates of model accuracy.
